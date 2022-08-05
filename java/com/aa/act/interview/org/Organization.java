@@ -8,6 +8,7 @@ public abstract class Organization {
 	
 	public Organization() {
 		root = createOrganization();
+
 	}
 	
 	protected abstract Position createOrganization();
@@ -21,6 +22,8 @@ public abstract class Organization {
 	 */
 	public Optional<Position> hire(Name person, String title) {
 		//your code here
+		Name.Name(person.getFirst(), person.getLast());
+		Position.Position(title);
 		return Optional.empty();
 	}
 
